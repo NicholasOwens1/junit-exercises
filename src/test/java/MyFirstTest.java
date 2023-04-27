@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -43,6 +44,16 @@ public class MyFirstTest {
         List<String> languages = new ArrayList<>();
         List<String> moreLanguages = new ArrayList<>();
         assertNotSame(languages, moreLanguages);
+    }
+
+    @Test
+    public void assertArrayEquals(int[] arr1, int[] arr2){
+        int[] numbers = {1, 2, 3};
+        int[] otherNumbers = new int[3];
+        otherNumbers[0] = 1;
+        otherNumbers[1] = 2;
+        otherNumbers[2] = 3;
+        assertArrayEquals(numbers, otherNumbers);
     }
 
 }
